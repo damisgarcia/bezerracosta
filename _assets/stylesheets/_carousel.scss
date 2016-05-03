@@ -4,17 +4,24 @@ Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
 Image credits: unsplash.com
 */
 
+$carousel-height: 45vh;
+$carousel-transition-duration:1s;
 /********************************/
 /*       Fade Bs-carousel       */
 /********************************/
 .fade-carousel {
+    @extend .container;
+    @include user-select(none);
     position: relative;
-    max-width: 76rem;
-    height: 35vh;
+    height: $carousel-height;
     margin: 15px auto;
+    cursor: default;
 }
 .fade-carousel .carousel-inner .item {
-    height: 35vh;
+    height: $carousel-height;
+}
+.fade-carousel .carousel-indicators, .fade-carousel .carousel-indicators li{
+  @include user-select(none);
 }
 .fade-carousel .carousel-indicators > li {
     margin: 0 2px;
@@ -55,19 +62,19 @@ Image credits: unsplash.com
 
 .fade-carousel .carousel-inner .item .hero {
     opacity: 0;
-    -webkit-transition: 2s all ease-in-out .1s;
-       -moz-transition: 2s all ease-in-out .1s;
-        -ms-transition: 2s all ease-in-out .1s;
-         -o-transition: 2s all ease-in-out .1s;
-            transition: 2s all ease-in-out .1s;
+    -webkit-transition: $carousel-transition-duration all ease-in-out .1s;
+       -moz-transition: $carousel-transition-duration all ease-in-out .1s;
+        -ms-transition: $carousel-transition-duration all ease-in-out .1s;
+         -o-transition: $carousel-transition-duration all ease-in-out .1s;
+            transition: $carousel-transition-duration all ease-in-out .1s;
 }
 .fade-carousel .carousel-inner .item.active .hero {
     opacity: 1;
-    -webkit-transition: 2s all ease-in-out .1s;
-       -moz-transition: 2s all ease-in-out .1s;
-        -ms-transition: 2s all ease-in-out .1s;
-         -o-transition: 2s all ease-in-out .1s;
-            transition: 2s all ease-in-out .1s;
+    -webkit-transition: $carousel-transition-duration all ease-in-out .1s;
+       -moz-transition: $carousel-transition-duration all ease-in-out .1s;
+        -ms-transition: $carousel-transition-duration all ease-in-out .1s;
+         -o-transition: $carousel-transition-duration all ease-in-out .1s;
+            transition: $carousel-transition-duration all ease-in-out .1s;
 }
 
 /********************************/
@@ -106,6 +113,7 @@ Image credits: unsplash.com
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  opacity: 0.5;
 }
 .fade-carousel .slides .slide-1 {
   background-image: image-url('carousel-01.png');

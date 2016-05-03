@@ -1,0 +1,5 @@
+.navbar-brand{
+  @include display(flex !important);
+  @include align-items(center);
+  padding: 0px !important;
+}

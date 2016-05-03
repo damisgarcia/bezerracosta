@@ -1,7 +1,7 @@
 //
 // @author: Damis Garcia
 //
-
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css";
 @import "bourbon";
 @import "bootstrap-sprockets";
 
@@ -15,4 +15,6 @@
 
 
 // Site
+@import "layout";
+@import "banner";
 @import "carousel";

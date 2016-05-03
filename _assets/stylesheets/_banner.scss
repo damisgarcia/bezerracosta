@@ -1,0 +1,14 @@
+.banner{
+  @extend .container;
+  padding: 64px 0;
+  background-image: image-url('skyscraper.svg');
+  background-position: left center;
+  background-repeat: repeat-x;
+  background-size: 56rem;
+  background-attachment: fixed;
+  @include user-select(none);
+  >img{
+    display: block;
+    margin: auto;
+  }
+}
