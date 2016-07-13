@@ -3,3 +3,35 @@
   @include align-items(center);
   padding: 0px !important;
 }
+
+.bc-affix{
+  top:20px;
+  &.affix{
+    width: 185px;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+  }
+}
+
+
+.bc-nav{
+  @extend .list-unstyled;
+  li{
+    a { color: $text-color; }
+    &.active > a{
+      color: #fff;
+      background-color: darken(#3e444c, 5);
+      // &::before{
+      //   font-family: FontAwesome;
+      //   content: "\f08d";
+      //   // content: "\f10c";
+      //   color:transparentize(#f39c12, 0.3);
+      //   margin-left: -10px;
+      //   margin-right: 5px;
+      // }
+    }
+    // &.active{
+    //   border-left: 2px #f39c12 solid;
+    // }
+  }
+}
