@@ -10,6 +10,7 @@ gem "jekyll-coffeescript"
 gem "coffee-script"
 gem "sass"
 gem "uglifier"
+gem "mini_magick"
 
 gem 'bootstrap-sass', '~> 3.3.6'
 
@@ -18,4 +19,5 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-bourbon', '4.2.6'
   gem 'rails-assets-jquery', '2.2.3'
   gem 'rails-assets-flexboxgrid','6.3.0'
+  gem 'rails-assets-magnific-popup', '1.1.0'
 end

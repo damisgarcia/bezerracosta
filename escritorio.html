@@ -3,11 +3,18 @@ layout: page
 title: Escritório
 permalink: /escritorio/
 ---
-<div class="row">
-  <div class="col-md-3">
-    <img src="http://placehold.it/350x350" class="img-responsive"/>
+<div class="row middle-xs">
+  <div class="col-md-4">
+    <div class="gallery">
+      <a href="{{ 'escritorio/07.jpg' | asset_path }}">
+        {% img "escritorio/07.jpg" class:"img-responsive" magick:one-fourth magick:quality:50 %}
+      </a>
+      <a href="{{ 'escritorio/02.jpg' | asset_path }}" class="hide">&nbsp;</a>
+      <a href="{{ 'escritorio/17.jpg' | asset_path }}" class="hide">&nbsp;</a>
+    </div>
+    </a>
   </div>
-  <div class="col-md-9">
+  <div class="col-md-8">
     <p>
       O escritório Bezerra Costa & Advogados Associados é composto por um corpo jurídico qualificado, que prima pela excelência na prestação de serviços a todos os seus clientes. Com matriz em Fortaleza e filial em São Paulo e Salvador, atuamos em todo o território nacional, com foco abrangência em especial no Nordeste e Sudeste do nosso pais.
     </p>
@@ -30,10 +37,10 @@ permalink: /escritorio/
 
   <hr class="col-md-12">
 
-  <div class="col-md-3">
-    <img src="http://placehold.it/350x350" class="img-responsive"/>
+  <div class="col-md-4">
+    {% img "escritorio/12.jpg" class:"img-responsive" magick:one-fourth magick:quality:85 %}
   </div>
-  <div class="col-md-9">
+  <div class="col-md-8">
     <p>
       Os serviços são desenvolvidos para ajudar nossos clientes a identificar as suas demandas jurídicas e as suas oportunidades de negócios. Visa, ainda, planejar para o futuro destes clientes à medida que políticas internas e/ ou externas evoluam para se adaptar às demandas de um mundo em transformação.
     </p>

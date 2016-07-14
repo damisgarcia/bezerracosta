@@ -5,6 +5,7 @@ Image credits: unsplash.com
 */
 
 $carousel-height: 45vh;
+$carousel-max-height: 480px;
 $carousel-transition-duration:1s;
 /********************************/
 /*       Fade Bs-carousel       */
@@ -14,8 +15,10 @@ $carousel-transition-duration:1s;
     @include user-select(none);
     position: relative;
     height: $carousel-height;
+    max-height: $carousel-max-height;
     margin: 15px auto;
     cursor: default;
+    overflow: hidden;
 }
 .fade-carousel .carousel-inner .item {
     height: $carousel-height;
@@ -110,7 +113,7 @@ $carousel-transition-duration:1s;
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3 {
   height: 100vh;
-  background-size: cover;
+  background-size: 100%;
   background-position: top center;
   background-repeat: no-repeat;
   opacity: 0.5;

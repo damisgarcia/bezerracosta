@@ -4,19 +4,14 @@ title: Blog
 permalink: /blog/
 ---
 
-<div class="blog">
+<div class="blog" ng-controller="BlogCtrl">
   <ul class="list-unstyled">
-    {% for post in site.posts %}
-      <li>
+      <li ng-repeat="post in posts">
         <h2>
-          <small class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</small>
-          <br>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          {{ 'post.title' | angular }}
+          <small class="post-meta">{{ 'post.date | date: "short"' |angular}}</small>
         </h2>
+        <article ng-bind-html="parseContent(post.content)"></article>
       </li>
-    {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>

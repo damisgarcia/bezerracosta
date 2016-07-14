@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="bezerracostaApp">
 
   {% include head.html %}
 
@@ -15,16 +15,11 @@
     {% javascript jquery %}
 
     {% bundle %}
-      - {{site.baseurl}}/vendor/angular/angular.min.js
-      - {{site.baseurl}}/vendor/angular/angular.min.js.gzip
-      - {{site.baseurl}}/vendor/angular-animate/angular-animate.js
-      - {{site.baseurl}}/vendor/angular-resource/angular-resource.js
+      - https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular.min.js
+      - https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular-animate.min.js
+      - https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular-resource.min.js
+      - https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular-sanitize.min.js
     {% endbundle %}
-    <!-- {% bundle %}
-    - https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular.js
-    - https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular-animate.js
-    - https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular-resource.js
-    {% endbundle %} -->
 
     {% javascript app %}
   </body>
