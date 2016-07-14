@@ -111,12 +111,12 @@ $carousel-transition-duration:1s;
 .fade-carousel .slides .slide-3 {
   height: 100vh;
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   opacity: 0.5;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: image-url('carousel-01.png');
+  background-image: image-url('carousel-01.jpg');
 }
 .fade-carousel .slides .slide-2 {
   background-image: image-url('carousel-02.png');
