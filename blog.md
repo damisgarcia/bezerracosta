@@ -4,7 +4,7 @@ title: Blog
 permalink: /blog/
 ---
 
-<div class="blog" ng-controller="BlogCtrl">
+<div class="blog ng-hide" ng-show="!loading" ng-controller="BlogCtrl">
   <ul class="list-unstyled">
       <li ng-repeat="post in posts">
         <h2>

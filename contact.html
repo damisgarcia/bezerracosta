@@ -10,19 +10,26 @@ permalink: /contact/
   	<!-- <div class="alert alert-success"><strong><span class="fa fa-check"></span> Sucesso! Mesagem Enviada.</strong></div>
       <div class="alert alert-danger"><span class="fa fa-exclamation-circle"></span><strong> Error! Por favor check se os campos foram preenchidos corretamente.</strong></div>
     </div> -->
-    <form role="form" action="" method="post" >
+    <form role="form" action="https://getsimpleform.com/messages?form_api_token=af34ac679dd5b4588a34ccd88bd6bae0" method="post">
+      <input type='hidden' name='redirect_to' value="{{'/obrigado' | prepend: site.baseurl | prepend: site.url }}" />
       <div class="col-xs-12">
         <div class="form-group">
-          <label for="InputName">Seu nome</label>
-          <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+          <label for="Nome">Seu nome</label>
+          <input type="text" class="form-control" name="Nome" id="InputName" placeholder="Seu nome" required>
+        </div>
+        <div class="form-group row">
+          <div class="col-md-6">
+            <label for="Email">Seu email</label>
+            <input type="email" class="form-control" id="InputEmail" name="Email" placeholder="Seu email" required>
+          </div>
+          <div class="col-md-6">
+            <label for="Telefone">Telefone de Contato</label>
+            <input type="phone" class="form-control" id="Email" name="Telefone" placeholder="85 1234-5678" mask="99 9999-9999" required>
+          </div>
         </div>
         <div class="form-group">
-          <label for="InputEmail">Seu email</label>
-          <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
-        </div>
-        <div class="form-group">
-          <label for="InputMessage">Sua messagem</label>
-          <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+          <label for="Mensagem">Sua messagem</label>
+          <textarea name="Mensagem" id="InputMessage" class="form-control" rows="5" required></textarea>
         </div>
         <input type="submit" name="submit" id="submit" value="Enviar" class="btn btn-primary btn-lg pull-right">
       </div>

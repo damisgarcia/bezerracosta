@@ -2,6 +2,7 @@
 #= require magnific-popup
 #= require config
 #= require blog
+#= require contact
 
 $('.gallery').magnificPopup({
   type: 'image',
