@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="bezerracostaApp">
 
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Contact</title>
+  <title>Fale Conosco</title>
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
 
-  <link type="text/css" rel="stylesheet" href="/bezerracosta/bezerracosta/assets/app-cd64e9b7e0af4b9574aadf2a00b772a72d27a807b9374028268e2d5e5710d18b.css">
+  <link type="text/css" rel="stylesheet" href="/bezerracosta/bezerracosta/assets/app-1dd2babddfa32720153bcb5db2c5d05c4fbe6a14b2dbcf9aabfa88f125fc0b06.css">
   <link rel="canonical" href="http://yourdomain.com/bezerracosta/contact/">
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://yourdomain.com/bezerracosta/feed.xml">
 </head>
@@ -35,13 +35,16 @@
       <div id="navbar" class="navbar-collapse navbar-right collapse">
         <ul class="nav navbar-nav">
           <li>
-            <a class="page-link" href="/bezerracosta/about">About</a>
+            <a class="page-link" href="/bezerracosta/atuacao">Áreas de atuação</a>
+          </li>
+          <li>
+            <a class="page-link" href="/bezerracosta/escritorio">Escritório</a>
           </li>
           <li>
             <a class="page-link" href="/bezerracosta/blog">Blog</a>
           </li>
           <li>
-            <a class="page-link" href="/bezerracosta/contact">Contact</a>
+            <a class="page-link" href="/bezerracosta/contact">Contatos</a>
           </li>
         </ul>
       </div><!--/.nav-collapse -->
@@ -54,17 +57,51 @@
       <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Contact</h1>
+    <h1 class="post-title">Fale Conosco</h1>
+    <hr>
   </header>
 
   <div class="post-content">
-    <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="http://jekyllrb.com/">jekyllrb.com</a></p>
-
-<p>You can find the source code for the Jekyll new theme at:
-<a href="https://github.com/jglovier/jekyll-new">jekyll-new</a></p>
-
-<p>You can find the source code for Jekyll at
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
+    <div class="container">
+<div class="row">
+  <div class="col-md-12">
+  	<!-- <div class="alert alert-success"><strong><span class="fa fa-check"></span> Sucesso! Mesagem Enviada.</strong></div>
+      <div class="alert alert-danger"><span class="fa fa-exclamation-circle"></span><strong> Error! Por favor check se os campos foram preenchidos corretamente.</strong></div>
+    </div> -->
+    <form role="form" action="" method="post" >
+      <div class="col-xs-12">
+        <div class="form-group">
+          <label for="InputName">Seu nome</label>
+          <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+        </div>
+        <div class="form-group">
+          <label for="InputEmail">Seu email</label>
+          <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+        </div>
+        <div class="form-group">
+          <label for="InputMessage">Sua messagem</label>
+          <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+        </div>
+        <input type="submit" name="submit" id="submit" value="Enviar" class="btn btn-primary btn-lg pull-right">
+      </div>
+    </form>
+    <h3>Localização</h3>
+    <div class="row">
+      <address class="col-md-8">
+        <p class="lead">Fortaleza, CE<br>
+          Avenida Treze de Maio, 1116, sala 801 <br>
+          <a href="tel:8530360840">(85) 3036-0840</a> - 08:00 às 18:00
+        </p>
+      </address>
+      <address class="col-md-4">
+        <p class="lead">Salvador, BA<br>
+          <a href="tel:71986759461">(71) 98675-9461</a> <br>
+          <a href="tel:7134758247">(71) 3475-8247</a>
+        </p>
+      </address>
+    </div>
+  </div>
+</div>
 
   </div>
 
@@ -120,16 +157,10 @@
 
     <script type="text/javascript" src="/bezerracosta/bezerracosta/assets/jquery-2da993bb3c4fb76b34d67029b0b88d2d1a83dea4462757b4ca5751fae11a2181.js"></script>
 
-    <script type='text/javascript' src='/vendor/angular/angular.min.js'></script>
-<script type='text/javascript' src='/vendor/angular-animate/angular-animate.js'></script>
-<script type='text/javascript' src='/vendor/angular-resource/angular-resource.js'></script>
+    <script type='text/javascript' src='/bundles/7df52887977ed2db1dc87d3eb1d52d45.js'></script>
 
-    <!-- <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular.js'></script>
-<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular-animate.js'></script>
-<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular-resource.js'></script>
- -->
 
-    <script type="text/javascript" src="/bezerracosta/bezerracosta/assets/app-2549605af0d3009ef13b121eabefefbbba8b79bf1a27d20398889a5109cf06e0.js"></script>
+    <script type="text/javascript" src="/bezerracosta/bezerracosta/assets/app-5e1d0d7b2a35f35cc5624fb79493a6a60242b8dcbab6b4af54a70a07b3237737.js"></script>
   </body>
 
 </html>

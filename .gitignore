@@ -2,3 +2,5 @@
 _asset_bundler_cache
 _assets
 _site
+Gemfile
+Gemfile.lock
