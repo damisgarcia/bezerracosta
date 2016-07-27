@@ -58,7 +58,3 @@ assets:
     liquid: false
     automatic_img_size: false
     automatic_img_alt : false
-
-asset_bundler:
-  compress:
-    js: uglifyjs
